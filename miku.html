@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>miku !!</title>
+
+    <style>
+        .miku { 
+            margin-top: 200px;
+        }
+
+        button {
+            margin-top: 40px;
+        }
+    </style>
+    
+    <script>
+        function dance() { // <3
+            // Get the element with the ID 'page1' 
+            var page1 = document.getElementById("page1");
+            // Get the element with the ID 'page2'
+            var page2 = document.getElementById("page2");
+
+            // Check if page1 is currently visible
+            if (page1.style.display === "none") {
+                // If page1 is hidden, show page1 and hide page2
+                page1.style.display = "block";
+                page2.style.display = "none";
+            } else {
+                // If page1 is visible, hide page1 and show page2
+                page1.style.display = "none";
+                page2.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
+<center>
+
+    <div class="miku">
+    <div id="page1">
+        <img src="https://media.tenor.com/bcGaD6hYz-AAAAAm/miku.webp">
+    </div>
+    
+    <div id="page2" style="display: none;">
+        <img src="https://media.tenor.com/UpfTzEfs5vIAAAAM/griddy-miku.gif" width="200px">
+    </div>
+    </div>
+    
+    <button onclick="dance()">dance :o</button>
+</center>
+</body>
+</html>
